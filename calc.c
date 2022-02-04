@@ -22,8 +22,7 @@ int get_result(int operand1, char operator, int operand2) {
   Exits the program with status code 1 in the case of an invalid operation.
   */
 
-  fprintf(stderr, "Invalid operand\n");
-  exit(1);
+  return 0;
 }
 
 int main(int argc, char **argv) {
