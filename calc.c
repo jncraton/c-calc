@@ -4,11 +4,9 @@
 void test();
 
 signed char subtract(signed char a, signed char b) {
-  /* Returns the result of `a - b`
-   * This function may only use the following operators
-   * 
-   * - Addition `+`
-   * - Bitwise complement `~`
+  /*
+   * Returns the result of `a - b` This function may only use the following
+   * operators - Addition `+` - Bitwise complement `~` 
    */
 
   return a;
@@ -28,7 +26,7 @@ int get_result(int operand1, char operator, int operand2) {
   exit(1);
 }
 
-int main(int argc, char ** argv) {
+int main(int argc, char **argv) {
   int operand1, operand2;
   char operator;
 
@@ -60,24 +58,24 @@ if ((exp) != result) { \
 
 
 void test() {
-  test_int_equal(subtract(0,0), 0);
-  test_int_equal(subtract(1,0), 1);
-  test_int_equal(subtract(99,0), 99);
-  test_int_equal(subtract(2,1), 1);
-  test_int_equal(subtract(10,1), 9);
-  test_int_equal(subtract(35,6), 29);
-  test_int_equal(subtract(127,10), 117);
-  test_int_equal(subtract(90,85), 5);
-  test_int_equal(subtract(1,2), -1);  
-  test_int_equal(subtract(15,20), -5);  
-  test_int_equal(subtract(0,1), -1);  
-  test_int_equal(subtract(1,-1), 2);  
-  test_int_equal(subtract(-1,0), -1);  
-  test_int_equal(subtract(-20,-10), -10);
+  test_int_equal(subtract(0, 0), 0);
+  test_int_equal(subtract(1, 0), 1);
+  test_int_equal(subtract(99, 0), 99);
+  test_int_equal(subtract(2, 1), 1);
+  test_int_equal(subtract(10, 1), 9);
+  test_int_equal(subtract(35, 6), 29);
+  test_int_equal(subtract(127, 10), 117);
+  test_int_equal(subtract(90, 85), 5);
+  test_int_equal(subtract(1, 2), -1);
+  test_int_equal(subtract(15, 20), -5);
+  test_int_equal(subtract(0, 1), -1);
+  test_int_equal(subtract(1, -1), 2);
+  test_int_equal(subtract(-1, 0), -1);
+  test_int_equal(subtract(-20, -10), -10);
 
-  test_int_equal(get_result(1,'+',1), 2);
-  test_int_equal(get_result(10,'-',5), 5);
-  test_int_equal(get_result(-5,'-',-10), 5);
-  test_int_equal(get_result(2,'*',-10), -20);
-  test_int_equal(get_result(50,'/',5), 10);
+  test_int_equal(get_result(1, '+', 1), 2);
+  test_int_equal(get_result(10, '-', 5), 5);
+  test_int_equal(get_result(-5, '-', -10), 5);
+  test_int_equal(get_result(2, '*', -10), -20);
+  test_int_equal(get_result(50, '/', 5), 10);
 }
