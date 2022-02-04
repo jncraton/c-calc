@@ -27,4 +27,4 @@ make test
 Assignment
 ----------
 
-This program is missing the implementation for the `get_result` function as well as a few key portions of the `main` function. Complete the program so that it runs as desribed above.
+This program is missing the implementation for the `get_result` function. Complete the program so that it runs as desribed above. Note that you may not use the `-` operator directly in `get_result`. Get result must call `subtract`, and subtract must implement subtraction without directly using the `-` operator.
