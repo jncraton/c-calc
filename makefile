@@ -1,7 +1,7 @@
 all: calc
 
 calc: calc.c
-	gcc -Wall -Wextra $< -o $@
+	gcc -Wall -Wextra -Wno-unused-parameter $< -o $@
 
 test: calc
 	@./$< "1+1"
