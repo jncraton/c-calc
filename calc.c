@@ -22,7 +22,7 @@ int get_result(int operand1, char operator, int operand2) {
   Exits the program with status code 1 in the case of an invalid operation.
   */
 
-  printf("Invalid operand");
+  fprintf(stderr, "Invalid operand\n");
   exit(1);
 }
 
@@ -31,7 +31,7 @@ int main(int argc, char **argv) {
   char operator;
 
   if (argc != 2) {
-    printf("No expression defined\n");
+    fprintf(stderr, "No expression defined\n");
     exit(1);
   }
 
@@ -53,7 +53,8 @@ It is not recommended to modify any code below this point
 
 #define test_int_equal(exp, result) \
 if ((exp) != result) { \
-  printf("Test %s == %d FAILED as %d.\n", #exp, result, exp); \
+  fprintf(stderr,"Test %s == %d FAILED as %d.\n", #exp, result, exp); \
+  exit(1); \
 } \
 
 
