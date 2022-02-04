@@ -9,7 +9,7 @@ signed char subtract(signed char a, signed char b) {
    * operators - Addition `+` - Bitwise complement `~` 
    */
 
-  return a;
+  return 0;
 }
 
 int get_result(int operand1, char operator, int operand2) {
