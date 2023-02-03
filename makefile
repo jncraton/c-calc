@@ -9,6 +9,7 @@ test: calc
 	@test "3 - 2 = 1" = "`./$< "3 - 2"`"
 	@test "3 * 2 = 6" = "`./$< "3 * 2"`"
 	@test "8 / 2 = 4" = "`./$< "8 / 2"`"
+	@echo All tests passed.
 
 clean:
 	rm -f calc
