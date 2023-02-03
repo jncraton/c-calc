@@ -6,7 +6,10 @@ void test();
 signed char subtract(signed char a, signed char b) {
   /*
    * Returns the result of `a - b` This function may only use the following
-   * operators - Addition `+` - Bitwise complement `~` 
+   * operators:
+   *
+   * - Addition `+`
+   * - Bitwise complement `~`
    */
 
   return 0;
@@ -24,6 +27,10 @@ int get_result(int operand1, char operator, int operand2) {
 
   return 0;
 }
+
+/*
+ * It is not recommended to modify any code below this point
+ */
 
 int main(int argc, char **argv) {
   int operand1, operand2;
@@ -45,10 +52,8 @@ int main(int argc, char **argv) {
 }
 
 /* 
-Test code 
-
-It is not recommended to modify any code below this point
-*/
+ *Test code
+ */
 
 #define test_int_equal(exp, result) \
 if ((exp) != result) { \
