@@ -4,11 +4,26 @@ C Calc
 
 A simple calculator in C
 
+Learning Outcomes
+-----------------
+
+After completing this lab, students will be able to:
+
+1. Invoke make and gcc to build software
+2. Implement simple functions in C
+3. Use integer types for math operations in [two's complement](https://en.wikipedia.org/wiki/Two%27s_complement)
+
 Usage
 -----
 
     > ./calc "1 + 2"
     1 + 2 = 3
+
+Tasks
+-----
+
+1. Complete the `subtract` function with using the `-` operator
+2. Complete the `get_result` function to return the result of a single operation
 
 Building
 --------
@@ -24,11 +39,6 @@ You can execute a few tests for your program by running:
 ```
 make test
 ```
-
-Assignment
-----------
-
-This program is missing the implementation for the `get_result` function. Complete the program so that it runs as desribed above. Note that you may not use the `-` operator directly in `get_result`. Get result must call `subtract`, and subtract must implement subtraction without directly using the `-` operator.
 
 Resources
 ---------
