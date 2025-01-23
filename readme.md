@@ -22,8 +22,8 @@ Usage
 Tasks
 -----
 
-1. Complete the `subtract` function with using the `-` operator
-2. Complete the `get_result` function to return the result of a single operation
+1. Complete the `subtract` function without using the `-` operator
+2. Complete the `get_result` function with using the `-` operator (call `subtract` instead)
 
 Building
 --------
